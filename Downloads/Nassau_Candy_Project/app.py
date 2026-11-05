@@ -16,7 +16,7 @@ st.subheader("Factory-to-Customer Shipping Route Efficiency Analysis")
 @st.cache_data
 def load_data():
     # Use 'Nassau Candy Distributor.csv' (or update filename if yours is named differently)
-    df = pd.read_csv('Nassau Candy Distributor.csv')
+    df = pd.read_csv('Downloads/Nassau_Candy_Project/Nassau Candy Distributor.csv')
     
     # Date formatting & Lead time calculation
     df['Order Date'] = pd.to_datetime(df['Order Date'], format='%d-%m-%Y', errors='coerce')
